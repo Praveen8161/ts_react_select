@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 124, 124);
+  min-height: 100vh;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 50vw;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#txt {
+  width: auto;
+  background-color: transparent;
+  border: inset 0.1px rgba(0, 0, 0, 0.355);
+  padding: 5px 2px;
+  font-size: medium;
+}
+
+#txt:focus {
+  outline: none;
+  border: inset 0.5px gray;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  border-radius: 10px;
+  padding-inline: 5px;
+  padding-block: 2px;
+}
+
+.divider {
+  align-self: stretch;
+  border: 1px solid rgb(92, 4, 4);
+  margin-inline: 5px;
+}
+
+.remove {
+  cursor: pointer;
+  max-width: 12px;
+  align-self: center;
+  position: relative;
+  top: 1px;
+}
+
+.badge_txt {
+  font-weight: 500;
+  font-size: larger;
+}
